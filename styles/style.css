@@ -1,0 +1,165 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+       
+}  
+  
+  header div img {
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+  }
+  
+  /* Display flex */
+  
+  header {
+    background-color: rgba(0, 0, 255, 0.315);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 255, 0.315);
+    border-radius: 10px;
+  }
+  
+  nav ul li a {
+    color: beige;
+  }
+  
+  /* Comienzo estilos main */
+
+main {
+  background-image: url('https://rickandmorty-finalproject-mairaledesma.vercel.app/img/background-image.webp');
+ /* background-color: violet; */
+  padding:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2{
+  padding: 20px;
+  display:block;
+  text-align: center;
+}
+  .sinopsis {
+  
+  display: flex;
+
+}
+
+.sinopsis div img {
+  width: 500px;
+  border-radius: 10px;
+  
+
+}
+
+.derecha {
+  background-color: rgba(0, 0, 255, 0.315);
+  padding: 20px;
+  color:rgb(186, 226, 43);
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+  
+
+/*-- Estilos contenedor de tarjetas de personajes --*/
+  
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .grid-item {
+    width: 200px;
+    background-color:crimson;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin:10px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  /* Comienzo estilos Footer */
+  
+  footer {
+    background-color:rgba(0, 0, 255, 0.315);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  footer div nav ul {
+    list-style: none;
+  }
+  
+  footer div nav ul li {
+    padding: 10px;
+    margin: 5px;
+    background-color: violet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /*
+  /*Media querie | punto de quiebre*/
+
+@media (max-width:880px) {
+  header {
+    background-color: red;
+  
+  }
+  .sinopsis {
+    flex-direction: column;
+}
+
+@media(max-width: 480px) {
+
+  header {
+    background-color: yellow;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    background-image: url("https://cdn.pixabay.com/photo/2023/01/08/18/45/road-7705909_1280.jpg");
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+
+
+
+  }
+  footer {
+    background-color: blue;
+  }
+}
